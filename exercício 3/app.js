@@ -8,12 +8,20 @@ encontraValor = (valor) =>{
     const encontrado = arrayNumeros.find(element => element > valor);
     console.log(encontrado)
 
-    for(var i = 0; i < arrayNumeros.length; i++){
-        if(arrayNumeros[i] == encontrado){
-            console.log('Valor encontrado no array de numeros!')
-            break
-        }
-    }
+    const verifica = (valor) => {
+       if(valor == encontrado){
+           console.log('Valor encontrado no array de numeros!')
+       }
+    } 
+
+    arrayNumeros.find(verifica)
+
+    //for(var i = 0; i < arrayNumeros.length; i++){
+    //    if(arrayNumeros[i] == encontrado){
+    //        console.log('Valor encontrado no array de numeros!')
+    //        break
+    //    }
+    //}
 }
 
 encontraValor(5)

@@ -1,0 +1,22 @@
+
+const arrayNumeros = [1,2,3,4,5,6,7,8,9]
+
+separaImpar = (valor) =>{
+    if(arrayNumeros[valor] % 2 == 0){
+        return valor
+    }
+}
+
+valida = (valor) =>{
+    if(arrayNumeros.find(element => element = valor)){
+        return valor
+    }
+}
+
+const arrayImpares = arrayNumeros.filter(separaImpar)
+const resultVal = arrayImpares.filter(valida)
+
+
+
+console.log(resultVal)
+console.log(arrayImpares)

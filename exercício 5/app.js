@@ -16,7 +16,10 @@ valida = (valor) =>{
 const arrayImpares = arrayNumeros.filter(separaImpar)
 const resultVal = arrayImpares.filter(valida)
 
-
+var validando = (arrayImpares.length == resultVal.length) && arrayImpares.every((element, index) => {
+    return element === resultVal[index]
+});
 
 console.log(resultVal)
 console.log(arrayImpares)
+console.log(validando)

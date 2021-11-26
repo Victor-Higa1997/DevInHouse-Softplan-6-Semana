@@ -1,15 +1,26 @@
 
 const arrayNumeros = [1,2,3,4,5,6,7,8,9]
-const arrayInvertido = []
-var cont = 0
 
-inverteArray = () =>{
-    for(var i = arrayNumeros.length-1; i >= 0 ;i--){
-        arrayInvertido[cont] = arrayNumeros[i]
-        cont++
-    }
-    console.log(arrayNumeros)
-    console.log(arrayInvertido)
+const found = arrayNumeros.find(element => element > 5);
+
+encontraValor = (valor) =>{
+    const encontrado = arrayNumeros.find(element => element > valor);
+    console.log(encontrado)
+
+    const verifica = (valor) => {
+       if(valor == encontrado){
+           console.log('Valor encontrado no array de numeros!')
+       }
+    } 
+
+    arrayNumeros.find(verifica)
+
+    //for(var i = 0; i < arrayNumeros.length; i++){
+    //    if(arrayNumeros[i] == encontrado){
+    //        console.log('Valor encontrado no array de numeros!')
+    //        break
+    //    }
+    //}
 }
 
-inverteArray()
+encontraValor(5)

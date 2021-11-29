@@ -1,26 +1,20 @@
 
-const arrayNumeros = [1,2,3,4,5,6,7,8,9]
+const arrayNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+var encontrado
 
 const found = arrayNumeros.find(element => element > 5);
 
-encontraValor = (valor) =>{
-    const encontrado = arrayNumeros.find(element => element > valor);
+encontraValor = (valor) => {
+    encontrado = arrayNumeros.find(element => element > valor);
     console.log(encontrado)
 
-    const verifica = (valor) => {
-       if(valor == encontrado){
-           console.log('Valor encontrado no array de numeros!')
-       }
-    } 
+}
 
-    arrayNumeros.find(verifica)
-
-    //for(var i = 0; i < arrayNumeros.length; i++){
-    //    if(arrayNumeros[i] == encontrado){
-    //        console.log('Valor encontrado no array de numeros!')
-    //        break
-    //    }
-    //}
+const verifica = (valor) => {
+    if (valor == encontrado) {
+        console.log('Valor encontrado no array de numeros!')
+    }
 }
 
 encontraValor(5)
+arrayNumeros.find(verifica)

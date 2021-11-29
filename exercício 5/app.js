@@ -1,15 +1,15 @@
 
-const arrayNumeros = [1,2,3,4,5,6,7,8,9]
+const arrayNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-separaImpar = (valor) =>{
-    if(arrayNumeros[valor] % 2 == 0){
+separaImpar = (valor) => {
+    if (arrayNumeros[valor] % 2 == 0) {
         return valor
     }
 }
 
 
-separaElementosIguais = (valor) =>{
-    if(arrayNumeros.find(element => element = valor)){
+separaElementosIguais = (valor) => {
+    if (arrayNumeros.find(element => element = valor)) {
         return valor
     }
 }
